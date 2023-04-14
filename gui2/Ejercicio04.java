@@ -3,9 +3,7 @@ package test;
 import java.util.Scanner;
 
 /**
- *Dada una cantidad de grados centígrados se debe mostrar su equivalente en grados Fahrenheit.
- * La fórmula correspondiente es: F = 32 + (9 * C / 5).
-
+ *
  * @author chuki
  */
 public class Ejercicio04 {
