@@ -18,7 +18,41 @@ public class Ejercicioextra12 {
    
     public static void main(String[] args) {
   Scanner leer = new Scanner(System.in);
-  
+     int n;
+        System.out.println("Ingresa una cantidad");
+        n = leer.nextInt();
+        for (int i = 0; i <= n; i++) {
+            
+            for (int j = 0; j < 3; j++) {
+                switch (j) {
+                    case 0:
+                        if (i / 100 % 10 == 3) {
+                            System.out.print("E");
+                        }else{
+                             System.out.print(i / 100 % 10);
+                        }
+                        System.out.print("-");
+                        break;
+                    case 1:
+                        if (i / 10 % 10 == 3) {
+                            System.out.print("E");
+                        }else{
+                             System.out.print(i / 10 % 10);
+                        }
+                        System.out.print("-");
+                        break;
+                    case 2:
+                        if (i % 10 == 3) {
+                            System.out.print("E");
+                        }else{
+                             System.out.print(i % 10);
+                        }
+                        break;
+                }
+                
+            }
+            System.out.println("");
+        }
     }
 
 }
