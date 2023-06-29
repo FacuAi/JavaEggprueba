@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Eje6">
+  <ClassDiagramComponents>
+    <Class name="Productos" package="Eje6" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="precio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="double" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ServiciosProductos" package="Eje6" visibility="public" xPosition="330.0" yPosition="20.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="agregarProducto" returnType="void" visibility="public">
+          <Argument type="HashMap&lt;String, Double&gt;" name="productos"/>
+        </Method>
+        <Method name="modificarProducto" returnType="void" visibility="public">
+          <Argument type="HashMap&lt;String, Double&gt;" name="productos"/>
+        </Method>
+        <Method name="eliminarProducto" returnType="void" visibility="public">
+          <Argument type="HashMap&lt;String, Double&gt;" name="productos"/>
+        </Method>
+        <Method name="mostrarProductos" returnType="void" visibility="public">
+          <Argument type="HashMap&lt;String, Double&gt;" name="productos"/>
+        </Method>
+        <Method name="promedioProductos" returnType="void" visibility="public">
+          <Argument type="HashMap&lt;String, Double&gt;" name="productos"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TiendaApp" package="Eje6" visibility="public" xPosition="834.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
