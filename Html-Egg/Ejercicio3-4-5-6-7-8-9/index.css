@@ -1,0 +1,138 @@
+body {
+    height: 1500px;
+    /* Simula contenido largo para probar el botón */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/*
+        Crear un archivo HTML y un archivo CSS, vamos a linkear el archivo CSS al archivo HTML y 
+        vamos a hacer lo mismo que el primer ejercicio, pero ahora la página va a tener un color 
+        de fondo a elección, el encabezado H1 tiene que tener una fuente a elección y estar 
+        centrado, lo mismo para el encabezado H2, y por ultimo los párrafos deben tener una 
+        fuente a elección, deben tener un color a elección y deben estar centrados a la izquierda.
+*/
+
+.cv {
+
+    background-color: blanchedalmond;
+
+
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+    text-align: center;
+   
+}
+
+p {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.enlace {
+    color: #CC0000;
+}
+
+.enlace:hover {
+    background-color: #CC0000;
+    color: #fff;
+}
+
+.enlace:visited {
+    color: #CCC;
+}
+
+
+#titulo {
+    color : navy;
+}
+
+strong {
+    color : red;
+}
+
+.destacado {
+    color :rgb(212, 160, 14);
+}
+
+#subtitulo, em {
+     color : navy;
+}
+
+p.span {
+    color: red;
+}
+
+.especial {
+    color : rgb(233, 67, 233);
+}
+
+#adicional {
+    color :rgb(212, 160, 14);
+}
+
+#especial {
+    color : violet;
+}
+
+#adicional a{
+    color: green;
+}
+
+th, td, tr .especial{
+    border: 2px solid black;
+}
+
+thead .especial {
+    color : rgb(211, 211, 15);
+}
+
+tbody tr {
+    color : green;
+}
+
+tbody strong {
+    color : rgb(211, 15, 208);
+}
+
+tbody .especial[scope="row"] {
+    color : rgb(248, 7, 7);
+}
+
+tbody th[scope="row"] {
+    color : red;
+}
+
+tbody em {
+    color : green;
+}
+
+tfoot th {
+    color : red;
+}
