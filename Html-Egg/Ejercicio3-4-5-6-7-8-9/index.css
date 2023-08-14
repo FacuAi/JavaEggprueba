@@ -47,7 +47,7 @@ body {
 
 
     text-align: center;
-   
+
 }
 
 p {
@@ -70,19 +70,20 @@ p {
 
 
 #titulo {
-    color : navy;
+    color: navy;
 }
 
 strong {
-    color : red;
+    color: red;
 }
 
 .destacado {
-    color :rgb(212, 160, 14);
+    color: rgb(212, 160, 14);
 }
 
-#subtitulo, em {
-     color : navy;
+#subtitulo,
+em {
+    color: navy;
 }
 
 p.span {
@@ -90,49 +91,151 @@ p.span {
 }
 
 .especial {
-    color : rgb(233, 67, 233);
+    color: rgb(233, 67, 233);
 }
 
 #adicional {
-    color :rgb(212, 160, 14);
+    color: rgb(212, 160, 14);
 }
 
 #especial {
-    color : violet;
+    color: violet;
 }
 
-#adicional a{
+#adicional a {
     color: green;
 }
 
-th, td, tr .especial{
+th,
+td,
+tr .especial {
     border: 2px solid black;
 }
 
 thead .especial {
-    color : rgb(211, 211, 15);
+    color: rgb(211, 211, 15);
 }
 
 tbody tr {
-    color : green;
+    color: green;
 }
 
 tbody strong {
-    color : rgb(211, 15, 208);
+    color: rgb(211, 15, 208);
 }
 
 tbody .especial[scope="row"] {
-    color : rgb(248, 7, 7);
+    color: rgb(248, 7, 7);
 }
 
 tbody th[scope="row"] {
-    color : red;
+    color: red;
 }
 
 tbody em {
-    color : green;
+    color: green;
 }
 
 tfoot th {
-    color : red;
+    color: red;
+}
+
+.list-item-1 {
+    background-color: #ff9999;
+    color: white;
+}
+
+.list-item-2 {
+    background-color: #99ff99;
+    color: black;
+}
+
+.list-item-3 {
+    background-color: #9999ff;
+    color: white;
+}
+
+.list-item-4 {
+    background-color: #ffff99;
+    color: black;
+}
+
+.custom-link-item-1 {
+    background-color: #ff9999;
+    color: white;
+}
+
+.custom-link-item-2 {
+    background-color: #99ff99;
+    color: black;
+}
+
+.custom-link-item-3 {
+    background-color: #9999ff;
+    color: white;
+}
+
+.custom-link-item-4 {
+    background-color: #ffff99;
+    color: black;
+}
+
+.normal {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.normal th {
+    border: 1px solid #000;
+    padding: 3px;
+}
+
+.normal td {
+    border: 1px solid #000;
+    padding: 3px;
+    text-align: center;
+}
+
+.cabecera-fila {
+    text-align: left;
+    background-color: #e6f3ff;
+    height: 25px;
+}
+
+.cabecera-columna {
+    background-color: #cccaca;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffcc;
+}
+.nav-item {
+    display: grid;           
+}
+
+
+.nav-item1 {
+    display: grid;
+}
+.btn {
+    background-color: gray;
+    color: black;
+}
+h3 {
+    padding: 30px;
+}
+.col-5 {
+    padding-top: 50px;
+}
+.card-body {
+    background-color: rgb(211, 207, 207);
+}
+.card-body a {
+    display: block;
+}
+.image {
+    width: 80%;
+    max-height: 80%;
+    min-width: max-content;
 }
