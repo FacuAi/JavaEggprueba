@@ -4,8 +4,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: gray;
 }
-
+.titulos{
+    text-align: center;
+    display: flex;
+}
 .scroll-to-top {
     display: none;
     position: fixed;
@@ -235,7 +239,21 @@ h3 {
     display: block;
 }
 .image {
+    padding-top: 47px;
     width: 80%;
     max-height: 80%;
     min-width: max-content;
 }
+.row {
+    margin: 10px;
+}
+.col-6 {   
+    padding: 20px;
+    border: 1px solid black ;
+    img{
+        width: 236px;
+        height: 313px;
+        vertical-align: middle;
+        border-style: none;
+    }
+}  
