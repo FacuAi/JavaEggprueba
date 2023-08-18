@@ -194,7 +194,8 @@ hr{
     background-color: #9999ff;
     color: white;
 }
-table{
+table{  
+    border-collapse: collapse;
     display: inline-table;
 }
 .custom-link-item-4 {
