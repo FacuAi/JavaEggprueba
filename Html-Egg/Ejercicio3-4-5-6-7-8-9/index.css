@@ -40,6 +40,7 @@ body {
     box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3);
     font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1;
 }
 
 .scroll-to-top:hover {
@@ -193,7 +194,9 @@ hr{
     background-color: #9999ff;
     color: white;
 }
-
+table{
+    display: inline-table;
+}
 .custom-link-item-4 {
     background-color: #ffff99;
     color: black;
