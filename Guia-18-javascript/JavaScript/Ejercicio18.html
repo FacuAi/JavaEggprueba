@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="resultado"></div> <!-- Este es el elemento donde se agregará el contenido HTML -->
+
+    <!--
+        A partir del siguiente array: var valores = [true, 5, false, "hola", "adios", 2]:
+        a) Determinar cual de los dos elementos de texto es mayor
+        b) Utilizando exclusivamente los dos valores booleanos del array, determinar los 
+        operadores necesarios para obtener un resultado true y otro resultado false
+        c) Determinar el resultado de las cinco operaciones matemáticas realizadas con los 
+        dos elementos numéricos
+    -->
+
+    <script>
+
+var valores = [true, 5, false, "hola", "adios", 2];
+
+var texto1 = valores[3];
+var texto2 = valores[4];
+
+if (texto1.length > texto2.length) {
+    console.log(texto1 + " es mayor que " + texto2);
+} else if (texto2.length > texto1.length) {
+    console.log(texto2 + " es mayor que " + texto1);
+} else {
+    console.log("Ambos textos tienen la misma longitud.");
+}
+
+var resultadoTrue = valores[0] || valores[2]; // true || false
+var resultadoFalse = valores[0] && valores[2]; // true && false
+
+console.log("Resultado True:", resultadoTrue);
+console.log("Resultado False:", resultadoFalse);
+
+var num1 = valores[1];
+var num2 = valores[5];
+
+var suma = num1 + num2;
+var resta = num1 - num2;
+var multiplicacion = num1 * num2;
+var division = num1 / num2;
+var modulo = num1 % num2;
+
+console.log("Suma:", suma);
+console.log("Resta:", resta);
+console.log("Multiplicación:", multiplicacion);
+console.log("División:", division);
+console.log("Módulo:", modulo);
+    alert(`Los resultados de las operaciones con los valores: ${num1} y ${num2} son:\nSuma: ${suma}\nResta: ${resta}\nMultiplicacion: ${multiplicacion}\nDivision: ${division}\nModulo: ${modulo}\nVerdadero: ${resultadoTrue} `);
+
+    let resultadoHTML = `
+    Los resultados de las operaciones con los valores: ${num1} y ${num2} son:
+    <br>Suma: ${suma}
+    <br>Resta: ${resta}
+    <br>Multiplicación: ${multiplicacion}
+    <br>División: ${division}
+    <br>Módulo: ${modulo}
+    <br>Verdadero:  ${resultadoTrue}
+
+`;
+
+// Obtener el elemento donde deseas agregar el contenido
+let resultadoElement = document.getElementById('resultado');
+// Agregar el contenido HTML al elemento utilizando innerHTML
+resultadoElement.innerHTML = resultadoHTML;
+//En este ejemplo, estamos usando la variable resultadoHTML para almacenar el contenido HTML que deseamos crear. Luego, seleccionamos un elemento del DOM con el ID 'resultado' (puedes reemplazarlo con el ID de tu elección) y usamos innerHTML para establecer el contenido HTML que creamos previamente en la variable resultadoHTML.
+//Recuerda que innerHTML puede ser útil, pero también puede presentar riesgos de seguridad si se utiliza para insertar contenido no confiable en tu página. En situaciones de producción, es importante asegurarse de que cualquier contenido que se inserte en el DOM a través de innerHTML sea seguro y esté correctamente escapado para evitar ataques de inyección de código.
+
+
+
+
+
+
+    </script>
+
+<script src="ejercicio19.js"></script>
+</body>
+
+</html>
