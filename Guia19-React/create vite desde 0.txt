@@ -1,0 +1,9 @@
+1 - npm install -g create-react-app
+2 - npx create-vite "nombre de la app" 
+
+cd "nombre de la app" 
+  npm install
+  npm run dev
+
+PARA LAS RUTAS INSTALAR:
+npm install react-router-dom
