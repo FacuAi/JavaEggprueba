@@ -1,5 +1,5 @@
 
-package com.LIBROS.LIBROS.entidades;
+package com.egg.biblioteca.entidades;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,14 +7,15 @@ import javax.persistence.Id;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
-
 public class Editorial {
-    
-       @Id
-    @GeneratedValue(generator="uuid")
+    @Id
+    @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
-private String id;
-private String nombre;
+    private String id;
+    private String nombre;
+
+    public Editorial() {
+    }
 
     public String getId() {
         return id;
@@ -31,13 +32,6 @@ private String nombre;
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    public Editorial(String id, String nommre) {
-        this.id = id;
-        this.nombre = nommre;
-    }
-
-    public Editorial() {
-    }
-
+    
+    
 }
